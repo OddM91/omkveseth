@@ -1,0 +1,140 @@
+$bcolor1: #242424;
+$bcolor2: #2d2d2d;
+$bcolor3: #202020;
+
+$fcolor: #ffffff;
+
+body{
+    background-color: #fff;
+    color: $fcolor;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    
+    
+}
+
+h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #8ED6FE;
+}
+
+h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+
+    text-align: left;
+
+    color: #D1D1D1;
+
+}
+
+.filler-text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: #D1D1D1;
+}
+
+a.view-link:link, a.view-link:visited{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+  
+    text-decoration-line: underline;
+  
+    color: #8ED6FE;
+}
+a.table-link:link, a.table-link:visited{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: #D1D1D1;
+}
+
+.table-button{
+    border: 2px solid #8ED6FE;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.td-button{
+    padding: 10px 22px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#hello-box{
+    background-color: $bcolor1;
+    text-align: left;
+    width: 100%;
+    letter-spacing: 0.8px;    
+}
+#about-box{
+    background-color: $bcolor2;
+    width: 100%;
+    text-align: center;
+}
+#sprak-box{
+    background-color: $bcolor1;
+    width: 100%;
+    text-align: center;
+}
+#prosjekt-box{
+    background-color: $bcolor3;
+    width: 100%;
+    text-align: center;
+}
+#kontakt-box{
+    background-color: $bcolor1;
+    width: 100%;
+    text-align: center;
+}
+
+.box-content{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.prosjekt{
+    text-align: left;
+    padding-top: 23px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+    background-color: #1A1A1E;
+}
