@@ -68,6 +68,11 @@ a.table-link:link, a.table-link:visited {
   margin-right: auto;
 }
 
+.table-button:hover {
+  background-color: #579bc0;
+  color: black;
+}
+
 .td-button {
   padding: 10px 22px;
 }
@@ -125,13 +130,20 @@ a.table-link:link, a.table-link:visited {
 }
 
 .prosjekt {
-  text-align: left;
+  display: grid;
   padding-top: 23px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   padding-left: 30px;
   padding-right: 30px;
   margin: 20px;
   background-color: #1A1A1E;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 4fr;
+}
+
+.prosjekt-item {
+  text-align: left;
+  align-self: center;
 }
 
 .sprak-ramme {
@@ -142,6 +154,29 @@ a.table-link:link, a.table-link:visited {
   transform: rotate(-45deg);
   margin-left: auto;
   margin-right: auto;
+}
+
+.prosjekt-ramme {
+  height: 49px;
+  width: 49px;
+  border: 2px solid;
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sprak-container {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sprak {
+  align-items: center;
+  flex: 1 1;
+  flex-basis: 100px;
 }
 
 .orange-ramme {
@@ -156,16 +191,19 @@ a.table-link:link, a.table-link:visited {
   border-color: #FE8EDF;
 }
 
-#sprak-container {
-  padding-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+@media (max-width: 550px) {
+  .prosjekt {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+  }
 
-.sprak {
-  align-items: center;
-  flex: 1 1 0px;
+  .box-content {
+    margin: 1rem;
+  }
+
+  .box-content-2 {
+    margin: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
