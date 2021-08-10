@@ -127,6 +127,29 @@ a.table-link:link, a.table-link:visited{
     text-align: center;
 }
 
+#bio-box{
+    background-color: $bcolor3;
+    width: 100%;
+    text-align: left;
+    
+    .filler-text{
+        line-height: normal;
+    }
+
+    h2{
+        text-align: left;
+    }
+}
+
+.bio-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.bio-item{
+    align-self: center;
+    padding-bottom: 1rem;
+}
+
 .box-content{
     padding-top: 70px;
     padding-bottom: 100px;
